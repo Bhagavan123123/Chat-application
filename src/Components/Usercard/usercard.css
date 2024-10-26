@@ -1,0 +1,24 @@
+.card{
+    width: 500px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+.Avathar{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-height: 80px;  
+    
+}
+img{
+    border-radius: 70px;
+}
+.content{
+    color: red;
+    display: flex;
+}
+
+.content > h1{
+    color: black;
+}
