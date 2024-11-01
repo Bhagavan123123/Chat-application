@@ -4,26 +4,29 @@ import css from "./usercard.css"
 
 export default function UserCard(){
     return(
-        <div className="card">
-        <div className="Avathar">
-         <img src={AvatarImg} alt="$"/>
-         </div>
+  <div className="whatapp-user-card">
+<div className="user-image">
+<img src={AvatarImg} alt="bhagavan-img"/>
+</div>
+<div className="user-details">
+    <div className="user-name-time">
+    <div className="user-name">
+        <p>Bhagavan</p>
+    </div>
+    <div className="user-time">
+        <p>5:30</p>
+    </div>
+    </div>
 
-       <div className="content">
-       <h1>Ganesh</h1>
-        <p>where are you</p>
-       </div>
-     
-       <div className="time">
-       <p>5:00</p>
-       </div>
-        
-        <div className="circle">
-         <p>5</p>
-        </div>       
-      
-
-
+    <div className="user-message">
+        <div className="message-text">
+            <p> where are you ?</p>
         </div>
+        <div className="user-message-count">
+            <p>6</p>
+        </div>
+    </div>
+</div>
+  </div>
     )
 }

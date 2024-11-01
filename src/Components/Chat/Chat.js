@@ -9,7 +9,7 @@ export default function Chat(){
     // Handle sending a message
     const sendMessage = () => {
       if (input.trim() === '') return; // Ignore empty messages
-      setMessages([...messages, { text: input, sender: 'You' }]); // Add new message
+      setMessages([...messages, { text: input, sender: 'Bhagavan' }]); // Add new message
       setInput(''); // Clear input field
       autoReply(input); // Call auto-reply function
     };
@@ -25,11 +25,11 @@ export default function Chat(){
     };
     return(
         <div className="App">
-        <h1>Chat Application</h1>
+        <h1>Auto Chat Application</h1>
         <div className="chat-container">
           <div className="messages">
             {messages.map((msg, index) => (
-              <div key={index} className={`message ${msg.sender === 'You' ? 'sent' : 'received'}`}>
+              <div key={index} className={`message ${msg.sender === ' Bhagavan' ? 'sent' : 'received'},message-tow`}>
                 <strong>{msg.sender}:</strong> {msg.text}
               </div>
             ))}
@@ -45,6 +45,7 @@ export default function Chat(){
             <button onClick={sendMessage}>Send</button>
           </div>
         </div>
+        
       </div>
     )
 }
