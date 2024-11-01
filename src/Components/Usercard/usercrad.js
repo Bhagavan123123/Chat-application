@@ -11,7 +11,7 @@ export default function UserCard(){
 <div className="user-details">
     <div className="user-name-time">
     <div className="user-name">
-        <p>Bhagavan</p>
+        <p>Bhagavan</p> <span></span>
     </div>
     <div className="user-time">
         <p>5:30</p>
